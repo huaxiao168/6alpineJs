@@ -1,0 +1,118 @@
+<!DOCTYPE html >
+<head>
+   <!-- 声明当前页面的编码集：charset=gbk,gb2312(中文编码) , utf-8(国际编码) -->
+   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+   <!-- 声明当前页面的三元素 -->
+   <title>Robin Fu Practics webpage</title>
+   <meta name='keywords' content='alpinejs,mini-css'>
+   <meta name='description' content='我的练习网页'>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- js/css -->
+   <script src="js/alpine.js"></script>	
+   <script src="js/Chart.min.js"></script>			
+   <!-- <link href="css/mini-dark.min.css" rel="stylesheet" type="text/css" />		 -->
+   <link href="css/mini-default.min.css" rel="stylesheet" type="text/css" />	
+   <link href="css/Chart.min.css" rel="stylesheet" type="text/css" />	
+   <link href="css/index.css" rel="stylesheet" type="text/css" />	
+   <style>
+       html,body{ height:100%;} 
+       body{overflow-y: hidden;}
+   </style>
+</head>
+
+<body class="fullHeight fullWidth ">
+    <header style="position: absolute;  width: 100%; top: 0;" > 
+        <a href="#" class="button" style="float:left"><img src="img/TungrayLogo.png" alt="同日logo" class="image"/> </a> 
+        <a href="#" class="button"> <mark class="tag">同日工业云</mark></a>   
+        <a href="#" role="button" style="float: right;"><span class="icon-user"></span>我的</a>
+        <a href="#" role="button" style="float: right;"><span class="icon-alert"></span>注销</a>
+    </header> 
+    <div style="margin:0;padding:0; width:100%; position: absolute;top: 56px;bottom: 50px;"> 
+        <div class="bg-white" style="width:219px; padding:0;height: 100%;border-right:.0625rem solid var(--footer-border-color);float: left;margin-bottom: 50px;overflow: auto;">
+            <div class="collapse" style="margin:0;padding:0;width: 100%;">
+                <input type="checkbox" id="collapse-section1" checked aria-hidden="true">
+                <label for="collapse-section1" aria-hidden="true" style="border-bottom-color: var(--footer-border-color);text-align: center;"><span class="icon-home"></span>&nbsp;标识看板</label>
+                <div>
+                    <br/>
+                    <span class="tooltip bottom" aria-label="这是提示的内容">光标悬浮查看提示</span>
+                    <br/>
+                </div>
+                <input type="checkbox" id="collapse-section2" aria-hidden="true">
+                <label for="collapse-section2" aria-hidden="true" style="border-bottom-color: var(--footer-border-color);text-align: center;"><span class="icon-location"></span>&nbsp;注册解析</label>
+                <div>
+                    <ul>
+                        <li>Apple</li>
+                        <li>Orange</li>
+                        <li>Strawberry</li>
+                      </ul>
+                      <ol>
+                        <li>Wake up</li>
+                        <li>Eat breakfast</li>
+                        <li>Go to work</li>
+                      </ol>
+                </div>
+                <input type="checkbox" id="collapse-section3" aria-hidden="true">
+                <label for="collapse-section3" aria-hidden="true" style="border-bottom-color: var(--footer-border-color);text-align: center;"><span class="icon-bookmark"></span>&nbsp;企业应用</label>
+                <div>
+                  <p>This is the Tirdth section of the collapse</p>
+                </div>
+                <input type="checkbox" id="collapse-section4" aria-hidden="true">
+                <label for="collapse-section4" aria-hidden="true" style="border-bottom-color: var(--footer-border-color);text-align: center;"><span class="icon-settings"></span>&nbsp;系统管理</label>
+                <div>
+                  <p>This is the Fourth section of the collapse</p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="bg-white container" style="margin-left: 220px; height: 100%; ">
+            <div class="row">
+                <div class="col-sm-4"><canvas id="myZhuChart" width="400" height="400"></canvas> </div>
+                <div class="col-sm-4"><canvas id="myPieChart" width="400" height="400"></canvas> </div>   
+                <div class="col-sm-4"><canvas id="myRadarChart" width="400" height="400"></canvas> </div>   
+            </div>
+            <div class="row cols-sm-12 cols-lg-10">
+                <!-- Add the extra style to make card spacing look better -->
+                <div class="col-lg-offset-1 row" style="-webkit-justify-content: space-around; justify-content: space-around;">
+                  <div class="card">
+                    <img src="https://placehold.it/800x600" class="section media">
+                    <h3 class="section double-padded">Lorem ipsum</h3>
+                    <p class="section double-padded">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="card">
+                    <img src="https://placehold.it/800x600" class="section media">
+                    <h3 class="section double-padded">Pellentesque nisl leo</h3>
+                    <p class="section double-padded">Pellentesque nisl leo, pharetra eu ipsum ut, lacinia faucibus neque.</p>
+                  </div>
+                  <div class="card">
+                    <img src="https://placehold.it/800x600" class="section media">
+                    <h3 class="section double-padded">Quisque ac tortor</h3>
+                    <p class="section double-padded">Quisque ac tortor in elit ultricies facilisis.这是现场的实时录像这是现场的实时录像这是现场的实时录像</p>
+                  </div>
+                 <div class="card">
+                    <img src="https://placehold.it/800x600" class="section media">
+                    <h3 class="section double-padded">Morbi pretium</h3>
+                    <p class="section double-padded">Morbi pretium leo a libero facilisis viverra.这是现场的实时录像</p>
+                  </div>
+                  <div class="card">
+                    <img src="https://placehold.it/800x600" class="section media">
+                    <h3 class="section double-padded">Vivamus maximus</h3>
+                    <p class="section double-padded">Vivamus maximus nibh a tempor fermentum.这是现场的实时录像</p>
+                  </div>
+                  <div class="card">
+                    <img src="https://placehold.it/800x600" class="section media">
+                    <h3 class="section double-padded">Suspendisse vitae</h3>
+                    <p class="section double-padded">Suspendisse vitae gravida justo, et faucibus erat.这是现场的实时录像</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <footer class="center" style="bottom:0;width:100%;height:50px;padding:0px;position: absolute;">
+        <p> Copyright &copy; 2020 <a  href="#">Tungray</a> All rights reserved | <a  href="#">昆山同日工业自动化有限公司</a>  版权所有 </p>
+    </footer>
+</body>
+
+<script  src="index.js"></script>
+
+</html>

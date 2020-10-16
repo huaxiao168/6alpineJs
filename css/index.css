@@ -1,0 +1,12 @@
+.fullHeight {height: 100%;}
+.fullWidth {width: 100%;}
+.minHeight {min-height: 400px;}
+.minWidth {min-width: 200px;}
+.bg-grey {background-color: grey;}
+.bg-heilan {background-color: #03102b;}
+.bg-876 {background-color: #887766;}
+.bg-while {background-color: white;}
+.center {text-align: center; }
+.flexMiddle{display: flex;  justify-content:center;  align-items:Center;}
+.marginMiddle{margin: auto;overflow: hidden;}
+.right {text-align: right;}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- 声明当前页面的编码集：charset=gbk,gb2312(中文编码) , utf-8(国际编码) -->
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <!-- 声明当前页面的三元素 -->
+    <title>Robin Fu Practics webpage</title>
+    <meta name='keywords' content='alpinejs,mini-css'>
+    <meta name='description' content='我的练习网页'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- js/css -->
+    <script src="js/alpine.js"></script>
+    <!-- <link href="css/mini-dark.min.css" rel="stylesheet" type="text/css" />		 -->
+    <link href="css/mini-default.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="sticky bg-white">
+       <h3 class="center">欢迎使用同日工业云平台</h3> 
+    </header>
+    <!-- <br /> -->
+    <div class="container">  
+        <div class="row">
+            <div class="col-sm">
+               
+            </div>
+            <!-- Adding some flex properties to center the form and some height to the page, these can be omitted -->
+            <div class="col-sm-12 col-md-8 col-lg-6"
+                 style="height: calc(100vh - 10.25rem); display: flex; align-items: center; flex: 0 1 auto;">  
+                <form>
+                    <p class="center"><img src="img/TungrayLogo.png" alt="同日logo"/></p>
+                    <fieldset>
+                        <legend></legend>
+                        <div class="input-group fluid">
+                            <label for="username" style="width: 80px;">用户名</label>
+                            <input type="text" value="" id="username" placeholder="username">
+                        </div>
+                        <div class="input-group fluid">
+                            <label for="pwd" style="width: 80px;">密码</label>
+                            <input type="password" value="" id="pwd" placeholder="password">
+                        </div>
+                        <div class="input-group fluid" >  
+                            <button>注册</button>
+                            <button>忘记密码?</button>
+                            <button ><a href="index.html">登录</a></button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-sm">
+            </div>
+        </div>
+    </div>
+    <footer class="center">
+        <p> Copyright &copy; 2020 <a  href="#">Tungray</a> All rights reserved | <a  href="#">昆山同日工业自动化有限公司</a>  版权所有 </p>
+    </footer>
+</body>
+
+</html>
